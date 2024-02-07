@@ -1,0 +1,4 @@
+{
+  "baseUrl": "http://staging.torc.dev",
+  "integrationFolder": "cypress/tests"
+}

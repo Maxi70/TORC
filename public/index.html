@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Torc</title>
+    <script>
+      !(function () {
+        var analytics = (window.analytics = window.analytics || []);
+        if (!analytics.initialize)
+          if (analytics.invoked)
+            window.console &&
+              console.error &&
+              console.error("Segment snippet included twice.");
+          else {
+            analytics.invoked = !0;
+            analytics.methods = [
+              "trackSubmit",
+              "trackClick",
+              "trackLink",
+              "trackForm",
+              "pageview",
+              "identify",
+              "reset",
+              "group",
+              "track",
+              "ready",
+              "alias",
+              "debug",
+              "page",
+              "once",
+              "off",
+              "on",
+              "addSourceMiddleware",
+              "addIntegrationMiddleware",
+              "setAnonymousId",
+              "addDestinationMiddleware",
+            ];
+            analytics.factory = function (e) {
+              return function () {
+                var t = Array.prototype.slice.call(arguments);
+                t.unshift(e);
+                analytics.push(t);
+                return analytics;
+              };
+            };
+            for (var e = 0; e < analytics.methods.length; e++) {
+              var key = analytics.methods[e];
+              analytics[key] = analytics.factory(key);
+            }
+            analytics.load = function (key, e) {
+              var t = document.createElement("script");
+              t.type = "text/javascript";
+              t.async = !0;
+              t.src =
+                "https://cdn.segment.com/analytics.js/v1/" +
+                key +
+                "/analytics.min.js";
+              var n = document.getElementsByTagName("script")[0];
+              n.parentNode.insertBefore(t, n);
+              analytics._loadOptions = e;
+            };
+            analytics._writeKey = "YEvefF0kjbIVyROFyEZ5QQZMNgWWwKgH";
+            analytics.SNIPPET_VERSION = "4.15.3";
+            analytics.page();
+          }
+      })();
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta
+      name="Torc"
+      content="We believe work can be better. Torc is the next-generation of the talent marketplace. Built for enterprises and the most productive software developers."
+    />
+    <link rel="canonical" href="https://www.torc.dev/" />
+    <meta property="og:title" content="Torc" />
+    <meta property="og:type" content="text/html" />
+    <meta property="og:url" content="https://www.torc.dev" />
+    <meta property="og:image" content="%PUBLIC_URL%/torc-social-og.png" />
+    <meta
+      property="og:description"
+      content="We believe work can be better. Torc is the next-generation of the talent marketplace. Built for enterprises and the most productive software developers."
+    />
+    <meta
+      name="description"
+      content="We believe work can be better. Torc is the next-generation of the talent marketplace. Built for enterprises and the most productive software developers."
+    />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="loading_screen" style="display: flex; padding-top: 96px">
+      <div style="margin: auto auto">
+        <div className="animated-pulse" style="animation: pulse 2s infinite">
+          <img src="./torc-logo.png" alt="logo" width="188" height="auto" />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://upload-widget.cloudinary.com/global/all.js"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+import { useEffect, useState } from "react";
+import Autosuggest from "react-autosuggest";
+import { connectAutoComplete, InstantSearch } from "react-instantsearch-dom";
+import algoliasearch from "algoliasearch";
+import classNames from "classnames";
+import PropTypes from "prop-types";
+
+import Input from "components/FormComponentsNew/Input";
+import styles from "./LocationsNew.module.css";
+import { useFormContext } from "react-hook-form";
+
+const searchClient = algoliasearch(
+  process.env.REACT_APP_ALGOLIA_APP_ID,
+  process.env.REACT_APP_ALGOLIA_API_KEY
+);
+
+const indexName = process.env.REACT_APP_ALGOLIA_INDEX_NAME;
+
+function Autocomplete(props) {
+  const [searchValue, setSearchValue] = useState(props.currentRefinement);
+  const { getFieldState, getValues } = useFormContext("location");
+  const [changed, setChanged] = useState(false);
+  const field = getFieldState("location");
+  const value = getValues("location");
+
+  useEffect(() => {
+    setSearchValue(props.currentRefinement);
+  }, [props.currentRefinement]);
+
+  const onChange = (event, { newValue }) => {
+    setChanged(true);
+    setSearchValue(newValue);
+  };
+
+  const onSuggestionsFetchRequested = ({ value, reason }) => {
+    props.refine(value);
+  };
+
+  const onSuggestionsClearRequested = () => {
+    // onSuggestionsClearRequested needs to be implemented
+    // but calling the function below in the body results
+    // in the input value being lost (due to InstantSearch sending back the empty value)
+    // Hence this is empty function for now
+    // props.refine();
+  };
+
+  const getSuggestionValue = (hit) => {
+    return `${hit.country_name}, ${hit.state_name}, ${hit.name}`;
+  };
+
+  const renderSuggestion = (hit) => {
+    return `${hit.country_name}, ${hit.state_name}, ${hit.name}`;
+  };
+
+  const renderInputComponent = (inputProps) => {
+    return (
+      <Input
+        id="locationSearch"
+        label="City, State/Province"
+        type="search"
+        classOverrides={classNames({
+          "!border-functionalDanger": !!field.error,
+          "!border-gray-600": value && !changed,
+          "!border-zestygreen": !field.error && !!value && changed,
+        })}
+        {...inputProps}
+      />
+    );
+  };
+
+  const renderSuggestionsContainer = ({ containerProps, children, query }) => {
+    if (!children) {
+      return <div {...containerProps}>{children}</div>;
+    }
+
+    return (
+      <div
+        {...containerProps}
+        className={classNames(containerProps.className, styles.searchBorder)}
+      >
+        {children}
+      </div>
+    );
+  };
+
+  const inputProps = {
+    onChange,
+    value: searchValue,
+  };
+
+  return (
+    <Autosuggest
+      suggestions={props.hits}
+      onSuggestionsFetchRequested={onSuggestionsFetchRequested}
+      onSuggestionsClearRequested={onSuggestionsClearRequested}
+      getSuggestionValue={getSuggestionValue}
+      renderSuggestion={renderSuggestion}
+      inputProps={inputProps}
+      renderInputComponent={renderInputComponent}
+      renderSuggestionsContainer={renderSuggestionsContainer}
+      onSuggestionSelected={props.onSuggestionSelected}
+      focusInputOnSuggestionClick={false}
+    />
+  );
+}
+
+const CustomAutocomplete = connectAutoComplete(Autocomplete);
+
+export default function SearchLocationsNew({ location, setLocation }) {
+  const [search, setSearch] = useState({ query: "", page: 1 });
+
+  useEffect(() => {
+    if (location?.id) {
+      setSearch({
+        query: `${location.country_name}, ${location.state_name}, ${location.name}`,
+        page: 1,
+      });
+    }
+  }, [location]);
+
+  const onSuggestionSelected = (e, { suggestion }) => {
+    const selection = JSON.parse(JSON.stringify(suggestion));
+    delete selection.__position;
+    delete selection.objectID;
+    delete selection._highlightResult;
+
+    setLocation(selection);
+  };
+
+  return (
+    <div className="relative">
+      <InstantSearch
+        searchClient={searchClient}
+        indexName={indexName}
+        searchState={search}
+        onSearchStateChange={(s) => {
+          setSearch(s);
+          if (s.query !== search.query || !s.query) {
+            setLocation(undefined);
+          }
+        }}
+      >
+        <CustomAutocomplete onSuggestionSelected={onSuggestionSelected} />
+      </InstantSearch>
+    </div>
+  );
+}
+
+SearchLocationsNew.propTypes = {
+  location: PropTypes.object,
+  setLocation: PropTypes.func,
+};

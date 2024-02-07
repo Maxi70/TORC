@@ -1,0 +1,7 @@
+.toggleSwitchContainer {
+  background: linear-gradient(183.67deg, #2b4485 6.6%, #afcaff 96.98%);
+  box-shadow: inset 0px 6px 8px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  width: 75px;
+  height: 35px;
+}

@@ -1,0 +1,14 @@
+.badge {
+  width: 48px;
+}
+
+.badges__wrapper p {
+  border-radius: 16px !important;
+  padding: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .badge {
+    width: 70px;
+  }
+}

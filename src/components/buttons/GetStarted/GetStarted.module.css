@@ -1,0 +1,21 @@
+.wrapper {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 61px;
+  /* width: 222px */
+  /* height: 55px; */
+}
+
+.btnLabel {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  /* font-size: 20px; */
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.arrow {
+  width: 18px;
+  height: 18px;
+  margin-left: 14px;
+}

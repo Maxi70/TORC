@@ -1,0 +1,22 @@
+.gradientBorder {
+  position: relative;
+  border-radius: 14px;
+  background: white;
+  background-clip: padding-box;
+}
+
+.gradientBorder::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(135deg, #f4d675 0%, #83d9bb 100%);
+  content: "";
+  z-index: -1;
+  border-radius: 14px;
+}
+
+.background-color {
+  background: linear-gradient(135deg, #f4d675 0%, #83d9bb 100%);
+}

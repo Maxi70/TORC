@@ -1,0 +1,33 @@
+:global(.ui.form) .locationSearchWrapper .locationSearch,
+:global(.ui.form) .locationSearchWrapper .locationSearch:focus,
+.locationSearchWrapper .locationSearch,
+.locationSearchWrapper .locationSearch:focus {
+  position: relative;
+  border: solid 2px transparent;
+  padding: 1rem 2rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 80px;
+  background: #999999;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-sizing: border-box;
+  outline: none;
+  width: 100%;
+}
+
+.searchBorder {
+  width: 100%;
+  position: absolute;
+  z-index: 500;
+  border: solid 2px transparent;
+  border-radius: 8px;
+  padding: 1rem 0.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(white, white), black;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-sizing: border-box;
+  margin-top: -14px;
+}

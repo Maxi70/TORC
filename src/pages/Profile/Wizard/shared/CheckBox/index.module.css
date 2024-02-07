@@ -1,0 +1,41 @@
+.checkboxContainer {
+  position: relative;
+}
+
+.checkboxLabel {
+  user-select: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.checkmarkContainer {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white),
+    linear-gradient(90deg, #e0a93e 0%, #37b6bf 101.93%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-sizing: border-box;
+  border-radius: 6px;
+  min-width: 34px;
+  min-height: 34px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkmarkIcon {
+  width: 34px;
+  height: 34px;
+  margin-right: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.disabled {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.5);
+}

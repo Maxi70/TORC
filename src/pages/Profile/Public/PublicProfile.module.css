@@ -1,0 +1,229 @@
+:root {
+  font-size: 16px;
+}
+
+.profile-main-header {
+  position: absolute;
+}
+.profile-header {
+  position: relative;
+  height: 270px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.placeholder-image {
+  background-image: url(../../../images/backgrounds/space.jpg);
+}
+
+.customer-placeholder-image {
+  background-image: url(../../../images/backgrounds/sky.png);
+}
+
+.profile-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 231px;
+  background: linear-gradient(
+    180.91deg,
+    rgba(213, 229, 253, 0.72) 15.27%,
+    rgba(213, 229, 253, 0) 90.22%
+  );
+  z-index: 0;
+}
+
+.profile-header--image {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  aspect-ratio: 1/1;
+  max-width: 317px;
+
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.profile-header > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.customer-profile-header--image {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  aspect-ratio: 1/1;
+  max-width: 317px;
+
+  border-radius: 50%;
+  z-index: 1;
+  background-image: url(../../../images/customer-profile.png);
+  background-position: center;
+}
+
+.profile-header--image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-header--image-wrapper {
+  margin-top: -25%;
+  max-width: 170px;
+}
+
+.border-gradient {
+  border-image-source: linear-gradient(
+    146.12deg,
+    rgba(61, 203, 160, 0.6) 28.53%,
+    rgba(239, 199, 57, 0.6) 79.91%
+  );
+}
+
+.graph-data {
+  min-width: 275px;
+}
+
+.personalWebsite {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+:global(i.icon.social-link--icons) {
+  font-size: 25px;
+  background: -moz-linear-gradient(
+    146.12deg,
+    rgba(61, 203, 160, 1) 28.53%,
+    rgba(239, 199, 57, 1) 79.91%
+  );
+  background: -webkit-linear-gradient(
+    146.12deg,
+    rgba(61, 203, 160, 1) 28.53%,
+    rgba(239, 199, 57, 1) 79.91%
+  );
+  background: linear-gradient(
+    146.12deg,
+    rgba(61, 203, 160, 1) 28.53%,
+    rgba(239, 199, 57, 1) 79.91%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:global(i.icon.customer-social-link--icons) {
+  font-size: 25px;
+  background: #4c32ff;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:global(a.social-links i.icon) {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .profile-header {
+    height: 400px;
+  }
+
+  .profile-header--image-wrapper {
+    margin-top: -52%;
+  }
+
+  .profile-detail-wrapper {
+    width: 100%;
+  }
+
+  .ui.card {
+    width: 100%;
+  }
+}
+
+.gradientWrapper {
+  padding: 2px;
+  background-image: linear-gradient(90deg, #37b6bf 0%, #e0a93e 101.93%);
+}
+
+.profileBarChart {
+  height: 400px;
+}
+
+@media only screen and (max-width: 767px) {
+  .profileBarChart {
+    height: 300px;
+  }
+}
+
+.profilePieChart {
+  height: 600px;
+}
+
+.dividerGradientVertical {
+  background-image: linear-gradient(45deg, #f4d675 0%, #83d9bb 100%);
+  width: 2px;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns:
+    1fr 2px 1fr 2px
+    1fr;
+  row-gap: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.label {
+  max-width: 175px;
+}
+
+@media (max-width: 767px) {
+  .label {
+    max-width: 125px;
+  }
+}
+
+.tooltipBtn {
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../../../images/tooltip-icon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  transition: opacity 0.1s;
+}
+
+.tooltipBtn:hover {
+  opacity: 1;
+}
+
+.generatedInfo p {
+  @apply text-left;
+  min-width: 320px;
+}
+
+.githubInfo p {
+  @apply text-left;
+  min-width: 250px;
+}
+
+.social-links-icon svg {
+  width: 24px;
+  height: 24px;
+}

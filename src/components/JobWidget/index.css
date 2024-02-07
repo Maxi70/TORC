@@ -1,0 +1,5 @@
+@media (min-width: 1025px) {
+  .jobwidget .header {
+    min-height: 72px;
+  }
+}

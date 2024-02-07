@@ -1,0 +1,27 @@
+.self-profile .ui.form .field :disabled {
+  opacity: 1;
+}
+
+.self-profile .ui.disabled.input {
+  opacity: 1;
+}
+
+.self-profile .six.wide.column.profile-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.self-profile .no-skills {
+  color: grey;
+}
+
+.self-profile .cover-photo-placeholder {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}

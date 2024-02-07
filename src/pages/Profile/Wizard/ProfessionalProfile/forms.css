@@ -1,0 +1,127 @@
+.profile-wizard .ui.grid > .row > .column.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-wizard .ui.grid > .row > .column.profile-pic-container > img {
+  display: block;
+  width: 317px;
+  height: 317px;
+}
+
+.profile-wizard .ui.grid > .row > .column.cover-photo-container > img {
+  display: block;
+  width: 1127px;
+  height: 317px;
+}
+
+.profile-wizard .ui.grid > .row > .column.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.profile-wizard .text-center {
+  text-align: center;
+}
+
+.profile-wizard .link-button {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.375rem 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.profile-wizard .profile-pic-preview {
+  max-height: 150px;
+  width: auto;
+}
+
+.profile-wizard .cover-photo-placeholder {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+
+.profile-wizard .cover-photo-wrapper {
+  width: 100%;
+  background-color: #2d2f2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-wizard .cover-photo-preview {
+  width: auto;
+  height: 300px;
+}
+
+.input-gradient-wrapper {
+  padding: 2px;
+  background-image: linear-gradient(90deg, #37b6bf 0%, #e0a93e 101.93%);
+}
+
+.textinput {
+  border: solid 2px transparent;
+  padding: 1rem 2rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 80px;
+  background: linear-gradient(white, white),
+    linear-gradient(90deg, #37b6bf 0%, #e0a93e 101.93%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-sizing: border-box;
+}
+
+textarea.textinput {
+  height: 100px;
+  border-radius: 2rem;
+}
+
+.textinput.social {
+  padding-left: 3.25rem;
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iNTEyIgogICBoZWlnaHQ9IjUxMiIKICAgaWQ9InN2ZzIiCiAgIHZlcnNpb249IjEuMSIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMC40OC40IHI5OTM5IgogICBzb2RpcG9kaTpkb2NuYW1lPSJoeXBlcmxpbmsuc3ZnIgogICBpbmtzY2FwZTpleHBvcnQtZmlsZW5hbWU9IkM6XERvY3VtZW50cyBhbmQgU2V0dGluZ3NcYnN0YXdhcnpcQnVyZWF1XFByb2plY3RzXFByb2pldCBTaXRlXHYxLjBcYXJyb3cucG5nIgogICBpbmtzY2FwZTpleHBvcnQteGRwaT0iOTAiCiAgIGlua3NjYXBlOmV4cG9ydC15ZHBpPSI5MCI+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiIC8+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJiYXNlIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBib3JkZXJvcGFjaXR5PSIxLjAiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAuMCIKICAgICBpbmtzY2FwZTpwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnpvb209IjAuNDk0OTc0NzUiCiAgICAgaW5rc2NhcGU6Y3g9Ii0yNi41NTg2NCIKICAgICBpbmtzY2FwZTpjeT0iMTIzLjExOTU4IgogICAgIGlua3NjYXBlOmRvY3VtZW50LXVuaXRzPSJweCIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJsYXllcjEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iOTg2IgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjYyNiIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iNjI4IgogICAgIGlua3NjYXBlOndpbmRvdy15PSIzNTQiCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMCIgLz4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICAgIDxkYzp0aXRsZSAvPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8ZwogICAgIGlua3NjYXBlOmxhYmVsPSJDYWxxdWUgMSIKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjEiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwtNTQwLjM2MjIpIj4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZm9udC1zaXplOjIwcHg7Zm9udC1zdHlsZTpub3JtYWw7Zm9udC12YXJpYW50Om5vcm1hbDtmb250LXdlaWdodDpub3JtYWw7Zm9udC1zdHJldGNoOm5vcm1hbDt0ZXh0LWFsaWduOnN0YXJ0O2xpbmUtaGVpZ2h0OjEyNSU7bGV0dGVyLXNwYWNpbmc6MHB4O3dvcmQtc3BhY2luZzowcHg7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2ZpbGw6IzIyMjIyMjtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtmb250LWZhbWlseTpPcGVuIFNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIgogICAgICAgZD0iTSAyNjguMjUsNTg3LjQ2ODc1IEMgMjAyLjA3MjcxLDU4Ny4yMjM0NiAxMzQuMTMyMzYsNjE2LjIwNjgzIDk1LjM1NTMxMyw2NzAuNzgxOCA1NS4wMDE0MjMsNzI2Ljc0ODEgNDQuODI5MjUxLDgwMC42MzE4IDU4LjE4NzUsODY3LjM3NSBjIDkuMzgyNzA0LDQ0LjU0NzM5IDM1LjQzNzEzOSw4Ni42NDc2MiA3NS4zMjM1NCwxMDkuOTI1MjMgNDUuNDk2NywyNy41MTM5NyAxMDAuOTcyNjQsMzEuNjMyNjcgMTUyLjgyNDU5LDI1LjY5NzU3IDI2LjAyMzksLTMuMTU0ODMgNTEuNjQzNjcsLTEwLjEwNzQ4IDc1LjQ0NTYyLC0yMC45OTc4IDAsLTE2LjQ0NzkyIDAsLTMyLjg5NTgzIDAsLTQ5LjM0Mzc1IC01My40OTMwNCwyMi4xNzk3MiAtMTE0LjY0Nzg0LDMyLjk4NTU5IC0xNzEuNSwxNy4wNjI1IC0zOS45NDM0OCwtMTEuMjU3NzkgLTcyLjQwOTY2LC00NS42ODY5NyAtODEuMTk1MTYsLTg2LjI0NzQ4IC0xMC40ODc3MTEsLTQxLjI4ODY5IC03LjkzOTgzLC04NS42ODg0MiA1LjM1MTQxLC0xMjUuOTcxMjcgMTQuMjMzOTgsLTQwLjI1NjkgNDUuMDk3MDQsLTc1LjA4MzY0IDg1LjYyMTk5LC04OS43MzEgNDAuNDM2NzIsLTE1LjgyODg2IDg2Ljg4OTgyLC0xNy4yNzg2OSAxMjguMTU5MjYsLTMuNjEyNzUgMzYuNzgxNywxMy40OTEyOSA2Ni43NTU5LDQ1LjI0Mzg4IDc1LjkzMzQxLDgzLjMwNDU3IDkuNTQwNjcsMzQuODM2NDIgOC40NDE4OCw3My4zMjE1IC01LjAzNDcxLDEwNi44NTU4IEMgMzkzLjE3NTc0LDg0OC40NDY3MSAzNzkuNzQ3MjEsODYyLjg1ODQ0IDM2Myw4NTkuNjI1IDM1My43MzM1OSw4NTguMTMxNTIgMzQ2LjQ5ODExLDg1MC4yNzQ1MiAzNDUuNTkzNzUsODQxIGMgLTQuOTQzNDEsLTIzLjM2NTM2IDEuMTI2ODUsLTQ3LjI1MDcyIDAuNzM1MDQsLTcwLjg2NzkgMS4yNzQxMSwtMjMuODg4NDMgMi41NDMzMiwtNDcuNzc3MiAzLjg1ODcxLC03MS42NjMzNSAtMzcuNzA3NzcsLTExLjI5MDUxIC03OC40Mzg2MSwtMTguNTUyMjkgLTExNy4zNDM3NSwtOS40Mzc1IC0zOS4zOTAxMywxMC43OTgyIC02OS42MDQ0MSw0Ni4yNDQyOCAtNzYuMTk2NTIsODYuNDAwMjkgLTUuNzU2MjgsMjkuODk3MDQgLTMuMjU1NjYsNjIuMTg5MTkgMTAuNTcxNTIsODkuMzgwOTYgMTIuNzg1NzQsMjMuMzA3NjQgMzcuNTM1NCwzOS44OTkxOSA2NC4zNzE0LDQwLjkyODU1IDI5LjYwODUzLDIuNzc5NDIgNjEuMTQ4OTgsLTkuNTgxMTMgNzcuOTcyMzUsLTM0LjU4NDggMTAuOTUzMzEsMjQuOTk5MzggNDAuMjY1NDYsMzkuMjE5NzQgNjYuOTA2MjUsMzQuMTU2MjUgMzEuNzgwODcsLTQuMzYwNzcgNTcuNDI2MTEsLTI5LjIzMTUzIDY4LjYyNSwtNTguNDA2MjUgMTguNTE0OTgsLTQzLjI1MjQ3IDE3LjY3OTc1LC05My4wNTA1NiA0Ljg0Mzc1LC0xMzcuNzUgLTE1LjMwNTU3LC00OS4zMzU3MiAtNTMuMzk0MDMsLTkxLjU1MDczIC0xMDIuNTU5NDksLTEwOC43MzEgLTI1LjE4MjE0LC05LjQ3NDUgLTUyLjIxODAzLC0xMy40ODU0NiAtNzkuMTI4MDEsLTEyLjk1NjUgeiBNIDI2NS4xMjUsNzMwLjg3NSBjIDEwLjQ2NDk0LC0wLjAzMzYgMjAuOTcxNTcsMC44MTcwNiAzMS4xMjUsMy4wMzEyNSAtMi45NzQ0MiwzNC4wODQ1NiAwLjY3MTY2LDY5Ljc3MjcxIC0xMi40Mjk5MywxMDIuMDU5MTEgLTYuMjcwNDksMTMuNjM2MzcgLTE5Ljk3NjMzLDI0LjIzNzA3IC0zNS4yNTc1NywyNC4wMzQ2NCAtMTUuOTk1LDEuNTY3OTUgLTMzLjc2Mjk0LC03LjgzMjExIC0zNy40OTkyNywtMjQuMzI1MTYgLTcuMTQ3MjQsLTIxLjg4NDg0IC01LjAzODA3LC00Ni4xMDc1IDEuNDk5MjcsLTY3LjgzMTA5IDcuMzI2MywtMTkuOTU2NDYgMjUuOTcwODIsLTM2LjQ5Nzc3IDQ3LjkzNzUsLTM2LjcxODc1IDEuNTM3OCwtMC4xMzMyIDMuMDgxNjgsLTAuMjE3NjMgNC42MjUsLTAuMjUgeiIKICAgICAgIGlkPSJ0ZXh0Mjk5NyIKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiIC8+CiAgPC9nPgo8L3N2Zz4K"),
+    linear-gradient(white, white),
+    linear-gradient(90deg, #37b6bf 0%, #e0a93e 101.93%);
+  background-origin: border-box;
+  background-clip: border-box, padding-box, border-box;
+  background-position: 1rem center, center, center;
+  background-size: 2rem, cover, cover;
+  background-repeat: no-repeat, repeat, repeat;
+}
+
+.gradientBorder {
+  position: relative;
+  border-radius: 70px;
+  background: white;
+  background-clip: padding-box;
+}
+
+.gradientBorder::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(135deg, #f4d675 0%, #83d9bb 100%);
+  content: "";
+  z-index: -1;
+  border-radius: 70px;
+}
+
+.background-color {
+  background: linear-gradient(135deg, #f4d675 0%, #83d9bb 100%);
+}
+
+.rubik-input > input {
+  font-family: Rubik !important;
+}

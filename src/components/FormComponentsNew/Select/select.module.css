@@ -1,0 +1,6 @@
+.customSelect {
+  background: url("images/new/arrow-down.svg") no-repeat 97% 50%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}

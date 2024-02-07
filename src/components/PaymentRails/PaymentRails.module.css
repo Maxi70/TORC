@@ -1,0 +1,4 @@
+.paymentRailsWrapper {
+  grid-template-columns: 1fr 3fr 1fr;
+  /* padding: 25px; */
+}

@@ -1,0 +1,16 @@
+.phoneBtn {
+  padding: 0 1rem !important;
+  background: transparent !important;
+  top: 1.5px !important;
+  left: 2px;
+  border: 0px !important;
+  border-right: 1px solid black !important;
+  height: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.phoneBtn > div,
+.phoneBtn > div:hover {
+  background-color: transparent !important;
+}

@@ -1,0 +1,22 @@
+.header {
+  display: grid;
+  grid-template:
+    "user user" auto
+    "logo nav " 1fr / auto 1fr;
+}
+
+.active {
+  background: #392ea7;
+}
+
+.highlight:hover {
+  background: #392ea7;
+}
+
+@media (min-width: 768px) {
+  .header {
+    grid-template:
+      "logo user" auto
+      "logo nav " 1fr / auto 1fr;
+  }
+}

@@ -1,0 +1,4 @@
+.input-gradient-wrapper {
+  padding: 2px;
+  background-image: linear-gradient(90deg, #37b6bf 0%, #e0a93e 101.93%);
+}

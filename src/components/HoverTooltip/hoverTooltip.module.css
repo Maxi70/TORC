@@ -1,0 +1,17 @@
+.profile--tooltip {
+  @apply text-center;
+  width: 100%;
+  transition: opacity 150ms ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+  .profile--tooltip {
+    width: fit-content;
+  }
+}
+
+.profile--accessDescription:hover div,
+.profile--tooltip__active.profile--accessDescription div {
+  opacity: 1;
+  pointer-events: all;
+}

@@ -1,0 +1,12 @@
+.githubConnect {
+  border: solid 2px transparent;
+  padding: 1rem 2rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 80px;
+  background: linear-gradient(white, white),
+    linear-gradient(90deg, #37b6bf 0%, #e0a93e 101.93%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-sizing: border-box;
+}

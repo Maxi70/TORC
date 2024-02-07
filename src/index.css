@@ -1,0 +1,278 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(/src/assets/css/helpers.css);
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: fit-content;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"), url("./fonts/Rubik-Light.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik Regular";
+  src: local("Rubik Regular"),
+    url("./fonts/Rubik-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik Medium";
+  src: local("Rubik Medium"), url("./fonts/Rubik-Medium.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik Bold";
+  src: local("Rubik Bold"), url("./fonts//Rubik-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nexa Bold";
+  src: local("Nexa Bold"), url("./fonts/NexaBold.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nexa Light";
+  src: local("Nexa Light"), url("./fonts/NexaLight.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nexa Regular";
+  src: local("Nexa Regular"), url("./fonts/NexaRegular.otf") format("opentype");
+  font-display: swap;
+}
+
+@media (min-width: 1025px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+p,
+a,
+li {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 5%;
+  line-height: 1.5rem;
+}
+
+.react-autosuggest__suggestion {
+  @apply hover:bg-gray-300 cursor-pointer;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  @apply font-nexa-regular sm:text-[80px] text-[50px] sm:leading-[90px] leading-[60px];
+}
+
+.compact-text h1 {
+  @apply sm:tracking-[-2.5px] tracking-[-1.56px];
+}
+
+h2 {
+  @apply font-nexa-regular sm:text-[60px] text-[40px] sm:leading-[70px] leading-[50px];
+}
+
+.compact-text h2 {
+  @apply sm:tracking-[-1.88px] tracking-[-1.25px];
+}
+
+h3 {
+  @apply font-nexa-regular sm:text-[50px] text-[30px] sm:leading-[60px] leading-[40px];
+}
+
+.compact-text h3 {
+  @apply sm:tracking-[0px] tracking-[-0.94px];
+}
+
+h4 {
+  @apply font-nexa-regular sm:text-[40px] text-[22px] sm:leading-[50px] leading-[28px];
+}
+
+.compact-text h4 {
+  @apply sm:tracking-[-1.25px] tracking-[-0.69px];
+}
+
+h5 {
+  @apply font-nexa-regular text-[30px] leading-[40px];
+}
+
+.compact-text h5 {
+  @apply tracking-[-0.94px];
+}
+
+h6 {
+  @apply font-nexa-regular text-[22px] leading-[28px];
+}
+
+.compact-text h6 {
+  @apply tracking-[-0.69px];
+}
+
+.b1 {
+  @apply font-rubik-regular sm:text-[30px] text-lg sm:leading-[48px] leading-[28px];
+}
+
+.compact-text .b1 {
+  @apply sm:tracking-[-0.94px] tracking-[-0.5px];
+}
+
+.b2 {
+  @apply font-rubik-regular sm:text-[22px] text-base sm:leading-[40px] leading-[24px];
+}
+
+.compact-text .b2 {
+  @apply sm:tracking-[-0.69px] tracking-[-0.5px];
+}
+
+.b3 {
+  @apply font-rubik-regular sm:text-lg text-xs sm:leading-[28px] leading-[18px];
+}
+
+.compact-text .b3 {
+  @apply sm:tracking-[-0.5px] tracking-[-0.4px];
+}
+
+.b4 {
+  @apply font-rubik-regular text-base leading-[24px];
+}
+
+.compact-text .b4 {
+  @apply tracking-[-0.5px];
+}
+
+.b4-bold {
+  @apply font-rubik-regular font-semibold text-base leading-[24px];
+}
+
+.compact-text .b4-bold {
+  @apply tracking-[-0.5px];
+}
+
+.b5 {
+  @apply font-rubik-regular text-xs leading-[18px];
+}
+
+.compact-text .b5 {
+  @apply tracking-[-0.4px];
+}
+
+.object-small-hidden {
+  @apply sm:block hidden;
+}
+
+.container-large {
+  @apply max-w-7xl mx-auto sm:px-10 px-[1.875rem] sm:py-0 pt-16;
+}
+
+.ui.form select,
+.ui.form select:focus {
+  border: none;
+  border-radius: 70px;
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
+
+.container-left {
+  max-width: 51.75rem;
+}
+
+.large-section {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  min-height: 18.75rem;
+}
+
+.form-small {
+  max-width: 37rem;
+  margin: 4rem auto;
+}
+
+@media (max-width: 640px) {
+  .container-large {
+    padding: 4rem 1.875rem 0 1.875rem;
+  }
+  .object-small-hidden {
+    display: none;
+  }
+  .large-section {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label {
+  transition: 0.5s;
+  display: inline-block;
+  background: url("./images/new/1-icon-checkbox.svg") no-repeat;
+  background-size: contain;
+}
+
+input[type="checkbox"]:checked + label {
+  transition: 0.5s;
+  background: url("./images/new/1-icon-checkbox_active.svg") no-repeat;
+  background-size: contain;
+}
+
+input[type="range"] {
+  height: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+}

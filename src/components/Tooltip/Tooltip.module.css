@@ -1,0 +1,19 @@
+.tooltipBtn {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../../images/tooltip-icon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  transition: opacity 0.1s;
+}
+
+.tooltipBtn:hover {
+  opacity: 1;
+}
+
+.tooltipContainer {
+  border-radius: 1rem;
+  max-width: 100vw;
+}

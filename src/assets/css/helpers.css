@@ -1,0 +1,47 @@
+:root {
+  --max-site-width: 1127px;
+  --orange: rgba(238, 146, 62, 1);
+  --customBlue: rgba(31, 183, 216, 1);
+  --customYellow: rgba(239, 199, 57, 1);
+  --customBlack: rgba(0, 0, 0, 1);
+  --customWhite: rgba(255, 255, 255, 1);
+  --bluePurple: rgba(64, 78, 204, 1);
+  --mustard: rgba(224, 169, 62, 1);
+  --navy: rgba(37, 41, 80, 1);
+  --zestyGreen: rgba(73, 191, 120, 1);
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  :root {
+    --max-site-width: 933px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  :root {
+    /* margin: 0 -1em; */
+    --max-site-width: 723px;
+  }
+}
+
+.full-width {
+  width: 100vw;
+  margin-left: calc(-1 * ((100vw - var(--max-site-width)) / 2));
+  margin-right: calc(-1 * ((100vw - var(--max-site-width)) / 2));
+}
+
+@media only screen and (max-width: 767px) {
+  .full-width {
+    margin: 0 -1em;
+  }
+}
+
+.full-width--wrapper {
+  max-width: var(--max-site-width);
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    background-color: transparent !important;
+  }
+}

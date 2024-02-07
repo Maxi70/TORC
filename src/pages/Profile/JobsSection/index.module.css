@@ -1,0 +1,28 @@
+.jobs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 110%;
+  height: 144px;
+  background-color: white;
+  border-radius: 0 0 50% 50%;
+  transform: translateY(-70%);
+  --tw-shadow: 6px 5px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media only screen and (max-width: 767px) {
+  .jobs::before {
+    width: 140%;
+    transform: translateY(-80%);
+  }
+}
+
+.jobs--wrapper {
+  max-width: var(--max-site-width);
+}
+
+.customerGradient {
+  background: linear-gradient(135deg, #84caf0 0%, #83d9bb 100%);
+}

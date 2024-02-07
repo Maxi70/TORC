@@ -1,0 +1,9 @@
+.alignCenter {
+  text-align: center;
+}
+.bg-gradient {
+  background-image: url("../../../images/ellipse-bg.png"),
+    linear-gradient(155deg, #1383f7, #3dcba0);
+  background-size: cover;
+  background-position: bottom right;
+}

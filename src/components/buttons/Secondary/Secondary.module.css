@@ -1,0 +1,16 @@
+.btn {
+  cursor: pointer;
+  width: 126px;
+  height: 45px;
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+
+.btnLabel {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+}

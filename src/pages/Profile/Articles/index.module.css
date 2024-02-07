@@ -1,0 +1,66 @@
+.getting-started::before {
+  top: 0;
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 144px;
+  background-color: white;
+  border-radius: 0 0 50% 50%;
+  transform: translateY(-70%);
+  --tw-shadow: 6px 5px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media only screen and (max-width: 767px) {
+  .getting-started::before {
+    width: 140%;
+    transform: translateY(-80%);
+  }
+}
+
+.getting-started--wrapper {
+  max-width: var(--max-site-width);
+}
+
+.getting-started--wrapper div {
+  flex-basis: 50%;
+}
+
+.featured {
+  height: 672px;
+}
+
+.notFeatured {
+  height: 315px;
+  /* border: 1px solid black; */
+}
+
+.imageFit {
+  object-fit: cover;
+  /* object-fit: contain; */
+}
+
+.articleContainer {
+  max-width: 458px;
+  min-width: 330px;
+  border: 1px solid linear-gradient(135deg, #84caf0 0%, #83d9bb 100%);
+
+  /* border-color: linear-gradient(135deg, #84caf0 0%, #83d9bb 100%); */
+  /* border-image-source: linear-gradient(135deg, #84caf0 0%, #83d9bb 100%); */
+  z-index: 1;
+}
+
+@media screen and (max-width: 990px) {
+  .articleContainer {
+    max-width: 340px;
+  }
+}
+
+.articleContentHeight {
+  height: 349px;
+}
+
+.customerGradient {
+  background: linear-gradient(135deg, #84caf0 0%, #83d9bb 100%);
+}

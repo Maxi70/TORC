@@ -1,0 +1,22 @@
+{
+  "ci": {
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "canonical": "off",
+        "csp-xss": "off",
+        "image-aspect-ratio": "off",
+        "image-size-responsive": "off",
+        "link-name": "off",
+        "service-worker": "off",
+        "tap-targets": "off",
+        "unsized-images": "off",
+        "unused-css-rules": "off",
+        "unused-javascript": "off",
+        "uses-rel-preconnect": "off",
+        "color-contrast": "off",
+        "heading-order": "off"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@media (min-width: 640px) {
+  .single-match {
+    height: 70vh;
+  }
+}
+
+.left-slide {
+  @apply absolute top-0 left-0;
+  transform: translateX(-110%);
+}
+
+.right-slide {
+  @apply absolute top-0 left-0;
+  transform: translateX(110%);
+}

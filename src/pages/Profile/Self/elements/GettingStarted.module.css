@@ -1,0 +1,37 @@
+.getting-started {
+}
+.getting-started::before {
+  top: 0;
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 144px;
+  background-color: white;
+  border-radius: 0 0 50% 50%;
+  transform: translateY(-70%);
+  --tw-shadow: 6px 5px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media only screen and (max-width: 767px) {
+  .getting-started {
+  }
+
+  .getting-started::before {
+    width: 140%;
+    transform: translateY(-80%);
+  }
+}
+
+.getting-started--wrapper {
+  max-width: var(--max-site-width);
+}
+
+.getting-started--wrapper div {
+  flex-basis: 50%;
+}
+
+.accessBar {
+  max-width: 170px;
+}

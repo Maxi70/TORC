@@ -1,0 +1,38 @@
+.githubInfo p {
+  @apply text-left;
+  min-width: 250px;
+}
+
+.tooltipBtn {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("images/tooltip-icon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  transition: opacity 0.1s;
+}
+
+.tooltipBtn:hover {
+  opacity: 1;
+}
+
+.label {
+  max-width: 175px;
+}
+
+.dividerGradientVertical {
+  background-image: linear-gradient(45deg, #f4d675 0%, #83d9bb 100%);
+  width: 2px;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr 2px 1fr;
+  row-gap: 3rem;
+}
+
+.profilePieChart {
+  height: 600px;
+}

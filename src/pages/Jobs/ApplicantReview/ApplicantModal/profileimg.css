@@ -1,0 +1,33 @@
+img.cld-responsive {
+  background-color: gray;
+}
+
+@media screen and (min-width: 766px) {
+  .rounded_modal {
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rounded_modal {
+    border-radius: 0px;
+  }
+}
+
+.coverPhoto > img {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 766px) {
+  .roundedTop {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .roundedTop {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+}
