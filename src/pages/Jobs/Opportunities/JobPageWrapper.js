@@ -65,7 +65,6 @@ export default function JobPageWrapper({ children }) {
           {children}
         </div>
       </div>
-
       {/* <div className="mx-auto max-w-4xl font-nexa text-white px-4 py-24 flex flex-col gap-4 items-start">
         <p className="text-5xl font-bold font-nexa">
           See all your jobs in one place.
